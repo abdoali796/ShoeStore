@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<data>
+    <variable
+        name="instructin"
+        type="com.udacity.shoestore.InstructinFragment" />
+</data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backb"
+        tools:context=".InstructinFragment">
+
+
+        <TextView
+            android:id="@+id/text_Instructin"
+            style="@style/CardView"
+            android:layout_width="151dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="116dp"
+            android:fontFamily="@font/fruktur"
+            android:text="@string/struction"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Instruction_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="@dimen/padding"
+            android:text="@string/structionhit"
+            android:textColor="#424242"
+            app:layout_constraintEnd_toEndOf="@+id/text_Instructin"
+            app:layout_constraintStart_toStartOf="@+id/text_Instructin"
+            app:layout_constraintTop_toBottomOf="@+id/text_Instructin" />
+
+        <Button
+            android:id="@+id/button_struction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/ok"
+            app:layout_constraintEnd_toEndOf="@+id/Instruction_text"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/Instruction_text"
+            app:layout_constraintTop_toBottomOf="@+id/Instruction_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

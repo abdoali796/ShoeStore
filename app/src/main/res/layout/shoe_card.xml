@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="shoemold"
+            type="com.udacity.shoestore.ShoesViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/padding"
+        android:background="@color/card"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/textView_shoeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:fontFamily="@font/fruktur"
+            android:text="@string/shoeName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="48sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="-6dp" />
+
+        <TextView
+            android:id="@+id/textView_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/fruktur"
+            android:text="@string/company"
+            android:textColor="#3E2723"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_shoeName"
+            app:layout_constraintTop_toBottomOf="@+id/textView_shoeName" />
+
+        <TextView
+            android:id="@+id/textView_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fruktur"
+            android:text="@string/size"
+            android:textColor="#3E2723"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_company"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_company" />
+
+        <TextView
+            android:id="@+id/textView_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/fruktur"
+            android:text="@string/description"
+            android:textColor="#3E2723"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintStart_toStartOf="@+id/textView_shoeName"
+            app:layout_constraintTop_toBottomOf="@+id/textView_company"
+            app:layout_constraintVertical_bias="0.205" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:text="@string/shoeName"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_shoeName"
+            app:layout_constraintEnd_toStartOf="@+id/textView_shoeName"
+            app:layout_constraintTop_toTopOf="@+id/textView_shoeName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_company"
+            app:layout_constraintEnd_toStartOf="@+id/textView_company"
+            app:layout_constraintTop_toTopOf="@+id/textView_company" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_Description"
+            app:layout_constraintEnd_toStartOf="@+id/textView_Description"
+            app:layout_constraintTop_toTopOf="@+id/textView_Description" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/size"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_size"
+            app:layout_constraintEnd_toStartOf="@+id/textView_size"
+            app:layout_constraintTop_toTopOf="@+id/textView_size" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </layout>
